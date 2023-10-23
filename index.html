@@ -235,15 +235,13 @@
     <p>
       We design the node features to be the indicators of the types of the nodes (agent/LiDAR hitting point/goal), and edge features to be the relative positions, velocities, etc. The information is processed by the graph neural network with attention, which outputs the CBF value \(h_i\) and the collision-avoidance control \(u_i^\mathrm{NN}\). The learned CBF determines whether to use the nominal controller \(u_i^\mathrm{nom}\) or switch to the collision-avoidance controller \(u_i^\mathrm{NN}\). 
     </p>
-    <figure>
-      <img src="figs/cbf.png"
+    <img src="figs/cbf.png"
       class="center-image"
       width="30%"
       alt="algorithm structure"/>
-      <figcaption align="center">
-        The learned CBF contour with the attention value.
-      </figcaption>
-    </figure>
+    <p align="center">
+      The learned CBF contour with the attention value.
+    </p>
     
     
     <!--/ TODO: Main point 2 -->
