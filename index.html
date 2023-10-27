@@ -190,7 +190,7 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-    <!-- TODO: Main point 1 -->
+    <!-- Main point 1 -->
     <div class="column">
       <div class="content">
         <h2 class="title is-3">Experiments</h2>
@@ -220,9 +220,9 @@
         </div>
       </div>
     </div>
-    <!--/ TODO: Main point 1 -->
+    <!--/ Main point 1 -->
 
-    <!-- TODO: Main point 2 -->
+    <!-- Main point 2 -->
     <div class="column">
       <div class="content">
         <h2 class="title is-3">Algorithm Structure</h2>
@@ -233,7 +233,7 @@
       </div>
     </div>
     <p>
-      We design the node features to be the indicators of the types of the nodes (agent/LiDAR hitting point/goal), and edge features to be the relative positions, velocities, etc. The information is processed by the graph neural network with attention, which outputs the CBF value \(h_i\) and the collision-avoidance control \(u_i^\mathrm{NN}\). The learned CBF determines whether to use the nominal controller \(u_i^\mathrm{nom}\) or switch to the collision-avoidance controller \(u_i^\mathrm{NN}\). 
+      We design the <b>node features</b> to be the indicators of the types of the nodes (agent/LiDAR hitting point/goal), and <b>edge features</b> to be the relative positions, velocities, etc. The information is processed by the graph neural network with attention, which outputs the CBF value \(h_i\) and the collision-avoidance control \(u_i^\mathrm{NN}\). The learned CBF <b>determines</b> whether to use the nominal controller \(u_i^\mathrm{nom}\) or <b>switch</b> to the collision-avoidance controller \(u_i^\mathrm{NN}\). 
     </p>
     <img src="figs/cbf.png"
       class="center-image"
@@ -242,20 +242,22 @@
     <p align="center">
       The learned CBF contour with the attention value.
     </p>
-    
-    
-    <!--/ TODO: Main point 2 -->
+    <!--/ Main point 2 -->
 
-    <!-- TODO: Main point 3 -->
-    <!-- <div class="column">
+    <!-- Main point 3 -->
+    <div class="column">
       <div class="content">
-        <h2 class="title is-3">TODO: main point 3</h2>
-        <img src="./static/images/TODO.png"
-          class="center-image simulation-image"
-          alt="TODO: alt text"/>
+        <h2 class="title is-3">Numerical Results</h2>
+        <img src="figs/success_rate.png"
+          class="center-image"
+          width="80%"
+          alt="algorithm structure"/>
       </div>
-    </div> -->
-    <!--/ TODO: Main point 3 -->
+    </div>
+    <p>
+      GCBF outperforms the baselines across the three environments and the three sets of experiments, namely, increasing density of the agents in a fixed workspace, increasing the size of the workspace to keep the density same, and increasing the size of the workspace but limiting the average distance traveled by agents. GCBF outperforms them because of a <b>better structure</b> than MDCBF, and RL <b>sacrifies</b> safety.
+    </p>
+    <!--/ Main point 3 -->
 
 
   <!-- Concurrent Work. -->
