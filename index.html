@@ -22,9 +22,9 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
+  <!-- <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
+  <script src="./static/js/index.js"></script> -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 </head>
 <body>
@@ -39,7 +39,7 @@
   </div>
   <div class="navbar-menu">
     <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://keunhong.com">
+      <a class="navbar-item" href="https://syzhang092218-source.github.io/">
       <span class="icon">
           <i class="fas fa-home"></i>
       </span>
@@ -53,12 +53,16 @@
           <a class="navbar-item" href="https://realm.mit.edu">
             REALM Website
           </a>
-        </div>
-        <!-- <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://realm.mit.edu">
-            TODO: link to any other pages you want
+          <a class="navbar-item" href="https://mit-realm.github.io/neuriss-website/">
+            NeurISS: Learning stabilizing controllers for networked dynamical systems
           </a>
-        </div> -->
+          <a class="navbar-item" href="https://mit-realm.github.io/gcbfplus-website/">
+            GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multi-Agent Control
+          </a>
+          <a class="navbar-item" href="https://arxiv.org/abs/2311.13714">
+            Survey: Learning Safe Control for Multi-Robot Systems: Methods, Verification, and Open Challenges
+          </a>
+        </div>
       </div>
     </div>
 
@@ -184,18 +188,15 @@
 
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
+      <h2 class="title is-4">For an improved version of GCBF, check our <a href="https://mit-realm.github.io/gcbfplus-website/"> GCBF+</a>!</h2>
+    </div>
+    <div class="column"></div>
+    <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We consider the problem of designing distributed collision-avoidance multi-agent control in large-scale environments with potentially moving obstacles, where a large number of agents are required to maintain safety using only local information and reach their goals. This paper addresses the problem of collision avoidance, scalability, and generalizability by introducing graph control barrier functions (GCBFs) for distributed control. The newly introduced GCBF is based on the well-established CBF theory for safety guarantees but utilizes a graph structure for scalable and generalizable decentralized control. We use graph neural networks to learn both neural a GCBF certificate and distributed control. We also extend the framework from handling state-based models to directly taking point clouds from LiDAR for more practical robotics settings. We demonstrated the efficacy of GCBF in a variety of numerical experiments, where the number, density, and traveling distance of agents, as well as the number of unseen and uncontrolled obstacles increase. Empirical results show that GCBF outperforms leading methods such as MAPPO and multi-agent distributed CBF (MDCBF). Trained with only 16 agents, GCBF can achieve up to 3 times improvement of success rate (agents reach goals and never encountered in any collisions) on < 500 agents, and still maintain more than 50% success rates for > 1000 agents when other methods completely fail.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
+            We consider the problem of designing distributed collision-avoidance multi-agent control in large-scale environments with potentially moving obstacles, where a large number of agents are required to maintain safety using only local information and reach their goals. This paper addresses the problem of collision avoidance, scalabi    <div>
 
 
 <section class="section">
@@ -271,23 +272,19 @@
 
 
   <!-- Concurrent Work. -->
-  <!-- <div class="columns is-centered">
-    <div class="column is-full-width">
-      <h2 class="title is-3">Related Links</h2>
-
+  <div class="column"></div>
+  <h2 class="title is-3">Related Work</h2>
+  <div class="column">
+    <div class="content">
       <div class="content has-text-justified">
         <p>
-          This work is part of a broader research thread around <emph>TODO</emph>, which allow us to TODO. TODO: e.g. For a survey of the field of learned certificates, see <a rel="survey" href="https://arxiv.org/pdf/2202.11762.pdf">this paper</a>.
-        </p>
-        <p>
-          Other work on TODO from our lab include:
-          <ul>
-            <li><a href="TODO.mit.edu">example 1</a>.</li>
-          </ul>
+          This work is the fundation of our work <a href="https://mit-realm.github.io/gcbfplus-website/">GCBF+</a>.
+
+          For a survey of the field of learning safe control for multi-robot systems, see <a rel="survey" href="https://arxiv.org/pdf/2311.13714.pdf">this paper</a>.
         </p>
       </div>
     </div>
-  </div> -->
+  </div>
   <!--/ Concurrent Work. -->
 </section>
 
