@@ -52,17 +52,20 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://realm.mit.edu">
-            REALM Website
+          <a class="navbar-item" href="https://mit-realm.github.io/dgppo/">
+            DGPPO: Discrete GCBF Proximal Policy Optimization for Multi-agent Safe Optimal Control
           </a>
-          <a class="navbar-item" href="https://mit-realm.github.io/neuriss-website/">
-            NeurISS: Learning stabilizing controllers for networked dynamical systems
-          </a>
-          <a class="navbar-item" href="https://mit-realm.github.io/gcbfplus-website/">
+          <a class="navbar-item" href="https://mit-realm.github.io/gcbfplus/">
             GCBF+: A Neural Graph Control Barrier Function Framework for Distributed Safe Multi-Agent Control
           </a>
           <a class="navbar-item" href="https://arxiv.org/abs/2311.13714">
             Survey: Learning Safe Control for Multi-Robot Systems: Methods, Verification, and Open Challenges
+          </a>
+          <a class="navbar-item" href="https://mit-realm.github.io/neuriss-website/">
+            NeurISS: Learning stabilizing controllers for networked dynamical systems
+          </a>
+          <a class="navbar-item" href="https://realm.mit.edu">
+            REALM Website
           </a>
         </div>
       </div>
@@ -95,7 +98,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2311.13014.pdf"
+                <a href="https://proceedings.mlr.press/v229/zhang23h/zhang23h.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -160,19 +163,14 @@
   </div>
 </section>
 
-<!-- <section class="hero teaser">
+<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/TODO.png"
-        class="center-image"
-        alt="TODO: alt text"/>
-      <h2 class="subtitle has-text-centered">
-        <br/>
-        TODO: headline caption
-      </h2>
+      <h2 class="title is-3"><center>Generalizable distributed safe controllers for 1000+ agents.</center></h2>
+      <h2 class="title is-4"><center>We have improved GCBF to <a href="https://mit-realm.github.io/gcbfplus/">GCBF+</a>!</center></h2>
     </div>
   </div>
-</section> -->
+</section>
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -189,9 +187,6 @@
     <!--/ Paper video. -->
 
     <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <h2 class="title is-4">For an improved version of GCBF, check our <a href="https://mit-realm.github.io/gcbfplus-website/"> GCBF+</a>!</h2>
-    </div>
     <div class="column"></div>
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -258,7 +253,7 @@
     <img src="figs/cbf.png"
       class="center-image"
       width="30%"
-      alt="algorithm structure"/>
+      alt="GCBF contours"/>
     <p align="center">
       The learned CBF contour with the attention value.
     </p>
@@ -271,7 +266,7 @@
         <img src="figs/success_rate.png"
           class="center-image"
           width="80%"
-          alt="algorithm structure"/>
+          alt="numerical results"/>
       </div>
     </div>
     <p>
@@ -287,8 +282,13 @@
     <div class="content">
       <div class="content has-text-justified">
         <p>
-          This work is the fundation of our work <a href="https://mit-realm.github.io/gcbfplus-website/">GCBF+</a>.
-
+          This work is the fundation of our work <a href="https://mit-realm.github.io/gcbfplus/">GCBF+</a> and <a href="https://mit-realm.github.io/dgppo/">DGPPO</a>.
+          <br>
+          <ul>
+            <li><a href="https://mit-realm.github.io/gcbfplus/">GCBF+</a>: an improved training framework of GCBF with much better performance.</li>
+            <li><a href="https://mit-realm.github.io/dgppo/">DGPPO</a>: Extend GCBF elegantly for safe multi-agent reinforcement learning. </li>
+          </ul>
+          <br>
           For a survey of the field of learning safe control for multi-robot systems, see <a rel="survey" href="https://arxiv.org/pdf/2311.13714.pdf">this paper</a>.
         </p>
       </div>
